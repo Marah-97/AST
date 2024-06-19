@@ -1,16 +1,16 @@
 # device settings
-device = 'cuda' # or 'cpu'
+device = 'cpu' #'cuda' # or 'cpu'
 
 # data settings
-dataset_dir = '/path/to/your/dataset/' # parent directory of class folders
+dataset_dir = 'C:/ainomaly-eu-central-1/Data/sample_1' #'C:/ainomaly-eu-central-1/Data/L113 KA HS03' #'/path/to/your/dataset/' # parent directory of class folders
 feature_dir = 'data/features/' # directory where features are stored and loaded from
-use_3D_dataset = True # is MVTec 3D used?
-pre_extracted = True # were feature pre-extracted with extract_features? (recommended)
-modelname = "my_experiment" # export evaluations/logs with this name
+use_3D_dataset = False #True # is MVTec 3D used?
+pre_extracted = False #True # were feature pre-extracted with extract_features? (recommended)
+modelname = "my_experiment_0" #"my_experiment" # export evaluations/logs with this name
 print(modelname)
 
 # inputs
-img_len = 768 # width/height of input image
+img_len = 768 # width/height of input image 
 img_size = (img_len, img_len) 
 img_dims = [3] + list(img_size)
 depth_len = img_len // 4 # width/height of depth maps
